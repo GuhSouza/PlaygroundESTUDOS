@@ -1,47 +1,55 @@
-const pets = ["lepra","Marquinhos", "bonitao","idoso"]
+let pets = ["lepra","Marquinhos", "bonitao","idoso"]
+let animais = ["Lagarto", "Abelha", "Leao"]
 
-//console.log(pets[0])
-
-// METODO PUSH,ele adiciona na ultima posição do array
-
-//METODO UNSHIFT add na primeira posicao do array
-
-//METODO POP remove o ultimo item da array
-
-// METODO index.Of  descobre a posicao da array
-
-// METODO find retorna o primeiro elemento da array
-
-const array1 = [2,15,18,28,35];
-
-// console.log(array1.find((element) >= element > 10)
-
-//console.log(pets)
-
-pets.push("Minatin")
-
-//console.log(pets)
-
-function addItemArray (lastItem) {       //FUNCTION adicionar ultimo item a lista de arrays
-    pets.push(lastItem)
-}
-
-addItemArray("Garuu")
-
-//console.log(pets)
-
-
-pets.unshift("Relikia")
-
-//console.log(pets)
-
-function addFirstItem (firstItem) {   // FUNCTION adicionar item na primeira posicao da array,indice 0
-    pets.unshift(firstItem)
-}
-
-addFirstItem("Gugu")
+// PUSH,ele adiciona um novo elemento a array,na ultima posição
+pets.push("Minato") 
 
 console.log(pets)
+
+function adicionarUmNovoItem (array,...novoItem) {
+    return array.push(novoItem)
+
+}
+
+adicionarUmNovoItem(animais,"Urso", "Jacare")
+
+console.log(animais)
+
+//UNSHIFT - adiciona um item na primeira posição
+
+pets.unshift("LEO")
+
+console.log(pets)
+
+//POP - ele remove o ultimo elemento da array
+
+const tirarOUltimoItem = pets.pop()
+
+
+console.log(tirarOUltimoItem)
+
+// indexOf - ele da a posição do lugar no array
+
+const indiceDaArray = pets.indexOf("lepra")
+
+console.log(indiceDaArray)
+
+// find ele retorna a primeira posição que der true
+
+const arrayDeTeste = [1,4,7,19,34,65,90]
+
+
+const descobrirOFind = arrayDeTeste.find((arrayIndice) => { 
+    return arrayIndice > 10})
+
+console.log(descobrirOFind)
+
+
+
+
+
+
+
 
 
 
