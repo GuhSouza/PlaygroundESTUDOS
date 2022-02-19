@@ -1,8 +1,10 @@
 let dia = "terça feira"
 
+//IF TERNARIO 
+
 let resultado = dia == 'domingo'? "Vou a praia" : "Não vou a praia"
 
-//console.log(resultado)
+console.log(resultado)
 
 
 
@@ -19,3 +21,7 @@ switch(dia) {
     console.log("Eu vou dormir") 
     break;   
 }
+
+
+// IF TERNARIO
+
